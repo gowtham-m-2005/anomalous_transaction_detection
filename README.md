@@ -5,6 +5,7 @@
 
 ## Target Solution:
   ### The Model is implemented within the admin portal of bank accounts which can detect anomalous transactions for a particular user with the press of a button.
+  #### The included website aims to work as a mock site to 'fix' the position of our model on the tech stack
 
 ## Requiremnets:
   ### Dataset
@@ -13,4 +14,14 @@
     pandas
     sklearn
 
+## Algorithms Used:
+  ### To Find Outliers:
+    Isolation Forest - found to be faster than One-Class SVM
+    One-Class SVM(Support Vector Machines)
+
+  ### Classification Algorithms
+  Trained and Tested with:
+     Logistic Regression
+     Decision Tree Classifier
+  
   
