@@ -16,8 +16,8 @@
 
 ## Algorithms Used:
   ### To Find Outliers:
-    Isolation Forest - found to be faster than One-Class SVM
-    One-Class SVM(Support Vector Machines)
+    #### Isolation Forest - found to be faster than One-Class SVM
+    #### One-Class SVM(Support Vector Machines)
 
   ### Classification Algorithms
   Trained and Tested with:
