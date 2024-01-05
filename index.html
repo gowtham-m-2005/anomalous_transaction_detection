@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="policy-details">
+      <!-- Policy details here -->
+      <h1>Cyber Knights</h1>
+    </div>
+    <nav class="menu">
+      <!-- Menu items -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button onclick="showLogin()">Admin Login</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div>
+    <h1> Work with your Money</h1>
+    <img src="1.png.png">
+  </div>
+
+  <!-- Admin Login Section (Initially hidden) -->
+  <div class="admin-login" style="display: none;">
+    <form id="admin-login-form" onsubmit="return adminLogin()">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <!-- Display greeting and user account details -->
+    <div class="welcome-section" style="display: none;">
+      <h2>Welcome Admin!</h2>
+      <div class="user-details">
+        <select id="user-dropdown" onchange="displayUserAccount()">
+          <option value="user1">John Doe</option>
+          <option value="user2">Jane Smith</option>
+          <option value="user3">Alice Johnson</option>
+        </select>
+        <div class="account-details" style="display: none;">
+          <!-- Display user's account details and transaction history here -->
+          <!-- Also include check anomalies button and warning email button -->
+          <button onclick="checkAnomalies()">Check Anomalies</button>
+        </div>
+      </div>
+    </div>
+    <section class="rightsection">
+      <div class ="rightsection">
+            Hi everyone our kindly request to you to do not share your bank details with unknown person.
+    </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <!-- Footer content -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
