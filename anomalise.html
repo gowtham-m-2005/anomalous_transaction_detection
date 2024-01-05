@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anomalies Checking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="policy-details">
+      <!-- Policy details here -->
+      <h1>Cyber Knights</h1>
+    </div>
+    <nav class="menu">
+      <!-- Menu items -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Anomalies Checking Section -->
+  <main class="main-content">
+    <div class="welcome-section">
+      <h2>Welcome Admin!</h2>
+      <div class="user-details">
+        <select id="user-dropdown" onchange="displayUserAccount()">
+          <option value="user1">John Doe</option>
+          <option value="user2">Jane Smith</option>
+          <option value="user3">Alice Johnson</option>
+        </select>
+        <div class="account-details" style="display: none;">
+          <!-- Display user's account details and transaction history here -->
+          <!-- Also include check anomalies button and warning email button -->
+          <button onclick="checkAnomalies()">Check Anomalies</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
